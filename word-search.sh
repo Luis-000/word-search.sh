@@ -41,6 +41,7 @@ done < <(grep -i "$letter" names.txt)
 
 if [[ $i == 0  ]]; then
 	echo "No words were found!"
+	echo "No Matches" >> found-words.txt
 else
 	echo "Found $i Words"
 fi
